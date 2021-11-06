@@ -1,6 +1,6 @@
 # Svelte blog with markdown formatted posts
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5651123.svg)](https://doi.org/10.5281/zenodo.5651123)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5651122.svg)](https://doi.org/10.5281/zenodo.5651122)
 
 ## Description
 
