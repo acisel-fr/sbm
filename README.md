@@ -1,5 +1,9 @@
 # Svelte blog with markdown formatted posts
 
+## Description
+
+SMB is a blog software written in Svelte, Typescript, HTML and CSS. Posts are written in [markdown] format. It is served by [nodejs].
+
 ## Data
 
 Metadata describing articles, authors, categories, projects and localisation dictionnaries are placed in the `src/lib/data` folder, are formatted in [yaml] or [markdown] and have a dedicated subfolder: `articles`, `authors`, `categories`, `projects` and `locales`. In order to avoid duplication of data, metadata are linked together with a specific field: `code`.
@@ -38,5 +42,6 @@ In this example:
 - the author coded `me` is defined in the `authors/me.yaml` file.
 - the project coded `myproject` is defined in the `projects/myproject.yaml` file.
 
-[yaml]: https://yaml.org/
+[yaml]: https://yaml.org
 [markdown]: https://daringfireball.net/projects/markdown/syntax
+[nodejs]: https://nodejs.org
