@@ -4,7 +4,7 @@
 
 ## Description
 
-SMB is a blog software written in Svelte, Typescript, HTML and CSS. Posts are written in [markdown] format. It is served by [nodejs].
+SBM is a blog software written in Svelte, Typescript, HTML and CSS. Posts are written in [markdown] format. It is served by [nodejs].
 
 ## Data
 
