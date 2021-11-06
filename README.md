@@ -1,5 +1,7 @@
 # Svelte blog with markdown formatted posts
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5651123.svg)](https://doi.org/10.5281/zenodo.5651123)
+
 ## Description
 
 SMB is a blog software written in Svelte, Typescript, HTML and CSS. Posts are written in [markdown] format. It is served by [nodejs].
