@@ -1,0 +1,14 @@
+{
+  "publication_date": "2021-11-06T20:44:23Z",
+  "upload_type": "software",
+  "title": "SBM: Svelte blog with markdown formatted posts",
+  "creators": [
+    {
+      "orcid": "0000-0002-0177-0387",
+      "name": "Chasset, Pierre-Olivier"
+    }
+  ],
+  "license": "MIT",
+  "access_right": "open",
+  "description": ""
+}
