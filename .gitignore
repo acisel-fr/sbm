@@ -1,8 +1,10 @@
 /.env
+.vscode
+# sveltekit
 /build
 /package
 /.svelte-kit
-
+# nodejs
 node_modules
-.vscode
+# macos
 .DS_Store
