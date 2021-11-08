@@ -1,42 +1,20 @@
-<script context="module" lang="ts">
-  import type { Article } from "$lib/types/article";
-  import type { Author } from "$lib/types/author";
-  export async function load({ page, fetch }) {
-    const code = page.params.slug;
-
-    let [{ data: articles }, { data: authors }]: [
-      { data: Article[] },
-      { data: Author[] }
-    ] = await Promise.all([
-      fetch(`/index.json?collection=articles&code=${code}`).then((r) =>
-        r.json()
-      ),
-      fetch("/index.json?collection=authors").then((r) => r.json()),
-    ]);
-
-    const article: Article = articles[0];
-    return {
-      props: {
-        article,
-        authors,
-      },
-    };
-  }
-</script>
-
 <script lang="ts">
   import MarkdownIt from "markdown-it";
-  import Close from "$lib/components/Close.svelte";
   import { locale, _ } from "svelte-i18n";
   import { DateTime } from "luxon";
+  import Close from "$lib/components/Close.svelte";
   import { merge_authors } from "$lib/collections/merge-authors";
-  const md = new MarkdownIt();
+  import { page } from "$app/stores";
+  import { meta } from "$lib/stores";
 
-  export let article: Article;
-  export let authors: Author[];
+  const md = new MarkdownIt();
+  
+  $: slug = $page.params.slug;
+  $: idx = $meta.articles.findIndex((e) => e.code === slug);
+  $: article = idx >= 0 ? $meta.articles[idx] : null;
 
   $: title = $_(`articles.${article.code}.title`);
-  $: citation = merge_authors(article.authors, authors, $_("authors.sep"));
+  $: citation = merge_authors(article.authors, $_("authors.sep"));
   $: date =
     DateTime.fromISO(article.createdAt)
       .setLocale($locale)
@@ -44,7 +22,7 @@
   $: doi = article.doi
     ? `<a href="https://doi.org/${article.doi}"><img src="https://zenodo.org/badge/DOI/${article.doi}.svg" alt="DOI"></a>`
     : null;
-  $: html = md.render(article.markdown);
+  $: html = article.markdown ? md.render(article.markdown) : null;
 </script>
 
 <div class="row">
