@@ -1,8 +1,8 @@
 <script>
   import { locale, locales } from "svelte-i18n";
   import Dropdown from "$lib/bootstrap/Dropdown.svelte";
-  import { languages } from "$lib/collections/languages";
-
+  import { meta } from "$lib/stores";
+  
   const title = '<i class="bi bi-translate" />';
   const bg = "btn-outline-secondary";
 
@@ -10,7 +10,7 @@
     locale.set(event.detail.code);
   }
 
-  $: options = languages($locales);
+  $: options = $meta.locales;
   $: target = $locale;
 </script>
 

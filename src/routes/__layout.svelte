@@ -1,6 +1,9 @@
 <script context="module" lang="ts">
   import "$lib/c11n/fonts.css";
+  import { meta } from "$lib/stores";
   import { i18n } from "$lib/c11n/i18n";
+  import metadata from "$lib/c11n/metadata.yaml";
+  meta.set(metadata);
   i18n();
 </script>
 

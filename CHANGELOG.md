@@ -2,6 +2,34 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/chasset/sbm/compare/v1.0.2...v2.0.0) (2021-11-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove all endpoints
+
+### Features
+
+* remove all endpoints ([789dbe9](https://github.com/chasset/sbm/commit/789dbe9a24a8dbff28e1043e2c0dd4c630df7ece))
+
+
+### Bug Fixes
+
+* Cite all versions ([b375a4e](https://github.com/chasset/sbm/commit/b375a4e32fee17b5f518daf4b3d34d3d41a175b8))
+* lock in package.json ([203f956](https://github.com/chasset/sbm/commit/203f956d47bfca5ae28a70302e6fc5597bd5fe8f))
+
+
+### Administration
+
+* Add standard-version parameters ([25fb6b3](https://github.com/chasset/sbm/commit/25fb6b39eb28bcdad5a121df7a0339be6c0ccab7))
+* Add zenodo parameters ([2568b27](https://github.com/chasset/sbm/commit/2568b2700055635112758bc50f88a555ddacc95a))
+
+
+### Documentation
+
+* Fix README ([43efa5f](https://github.com/chasset/sbm/commit/43efa5fccf5de3a61f73cf900cd3ca7a29ee6c79))
+
 ### [1.0.2](https://github.com/chasset/sbm/compare/v1.0.1...v1.0.2) (2021-11-06)
 
 ### Bug Fixes

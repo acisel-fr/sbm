@@ -1,23 +1,10 @@
-<script context="module" lang="ts">
-  import type { Article as Post } from "$lib/types/article";
-  export async function load({ fetch }) {
-    const { data }: { data: Post[] } = await fetch(
-      "/index.json?collection=articles"
-    ).then((r) => r.json());
-    return {
-      props: {
-        data,
-      },
-    };
-  }
-</script>
-
 <script lang="ts">
   import { page } from "$app/stores";
   import Article from "$lib/components/Article.svelte";
   import { _ } from "svelte-i18n";
+  import { meta } from "$lib/stores";
 
-  export let data: Post[];
+  $: data = $meta.articles;
 
   $: category = $page.query.get("category");
   $: articles = category

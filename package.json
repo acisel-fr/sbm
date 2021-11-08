@@ -1,6 +1,6 @@
 {
   "name": "sbm",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "description": "Svelte blog with markdown formatted posts",
   "author": "Pierre-Olivier Chasset",
   "license": "MIT",
