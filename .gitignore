@@ -1,5 +1,6 @@
 /.env
 .vscode
+/src/lib/c11n
 # sveltekit
 /build
 /package
