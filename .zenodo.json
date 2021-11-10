@@ -2,7 +2,7 @@
   "publication_date": "2021-11-06",
   "upload_type": "software",
   "title": "SBM: a blog with markdown formatted posts written in Svelte",
-  "description": "Svelte blog with markdown formatted posts"
+  "description": "Svelte blog with markdown formatted posts",
   "creators": [
     {
       "orcid": "0000-0002-0177-0387",
