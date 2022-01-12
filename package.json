@@ -30,7 +30,7 @@
     "gray-matter": "^4.0.3",
     "js-yaml": "^4.1.0",
     "luxon": "^2.0.2",
-    "markdown-it": "^12.2.0",
+    "markdown-it": "^12.3.2",
     "prettier": "^2.4.1",
     "prettier-plugin-svelte": "^2.4.0",
     "standard-version": "^9.3.2",
